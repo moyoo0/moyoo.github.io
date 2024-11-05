@@ -27,7 +27,7 @@
 <meta property="og:description" content="1. PyTorch 利用 backward() 求梯度的过程和原理 在 PyTorch 中，backward() 是自动求导的关键函数，它用于计算张量的梯度。PyTorch 的自动求导功能基于“计算图”和“反向传播”原理，使得在训练深度学习模型时，计算损失函数相对于各参数的梯度变得高效便捷。下面介绍 PyTorch 中 backward() 求梯度的过程和原理。 1.1 计算图（Comput">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-10-26T10:15:30.000Z">
-<meta property="article:modified_time" content="2024-10-26T10:32:14.313Z">
+<meta property="article:modified_time" content="2024-11-05T17:17:48.952Z">
 <meta property="article:author" content="moyoo">
 <meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary_large_image">
@@ -335,9 +335,9 @@
 <h3 id="dataloader-的作用">2.1 DataLoader 的作用</h3>
 <p><code>DataLoader</code> 的核心功能包括：</p>
 <ul>
-<li><strong>按批次加载数据</strong>：可以将数据集分为多个小批量（batch），使得每次训练迭代只用一个小批量数据，这对内存使用和优化效果有很大帮助。</li>
-<li><strong>打乱数据</strong>：在每次 epoch 之前随机打乱数据的顺序，以提高模型的泛化能力。</li>
-<li><strong>并行处理</strong>：通过多线程或多进程的方式加速数据加载，减少数据读取的时间消耗。</li>
+<li><p><strong>按批次加载数据</strong>：可以将数据集分为多个小批量（batch），使得每次训练迭代只用一个小批量数据，这对内存使用和优化效果有很大帮助。</p></li>
+<li><p><strong>打乱数据</strong>：在每次 epoch 之前随机打乱数据的顺序，以提高模型的泛化能力。</p></li>
+<li><p><strong>并行处理</strong>：通过多线程或多进程的方式加速数据加载，减少数据读取的时间消耗。</p></li>
 </ul>
 <h3 id="dataloader-的基本用法">2.2 DataLoader 的基本用法</h3>
 <p>使用 <code>DataLoader</code> 的步骤主要有两个：</p>
